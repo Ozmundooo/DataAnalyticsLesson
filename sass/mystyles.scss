@@ -1,0 +1,233 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$background: #76417c;
+$font-color: #FFFFFF;
+
+// Update Bulma's global variables
+$family-sans-serif: "Roboto", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $background;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+body{
+    margin: 0 10%;
+}
+.is-1{
+    padding-top: 2%;
+    text-align: center;
+    color: $font-color;
+    text-decoration: underline black;
+}
+
+.tile{
+    padding: 2% 2%;
+    .card{
+        border: 7px solid #2c2c2c;   
+        border-radius: 12%;
+    }
+    img{
+        margin: auto;
+        display: block;
+    }
+}
+
+.card-content p{
+    text-align: center;
+}
+
+#typesOfData{
+    .is-child {
+    border: 2px solid black;
+    }
+   
+    h2, p, h6,ol, li{
+        text-align: center;
+        list-style-position: inside;
+    }
+    p{
+        font-size: 120%;
+    }
+    li{
+        font-size: 105%;
+    }
+}
+
+
+
+#descriptives{
+    .contents{
+        background-color: white;
+        border: 2px solid black;
+    }
+    h2{
+        padding-top: 20px;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 125%;
+    }
+    .subtitle{
+        font-size: 12px;
+    }
+    iframe{
+        width: 100%;
+        height: 400px;
+        padding: 0 10%;
+    }
+}
+
+#predictive{
+    .contents{
+        background-color: white;
+        border: 2px solid black;
+    }
+    .container{
+        .title{
+            text-decoration:  underline black 1px;
+        }
+    }
+    h2{
+        padding-top: 20px;
+
+    }
+     p{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 125%;
+    }
+    .level-item
+    {
+        .subtitle{
+        font-size: 12px;
+    }
+    }
+}
+#questions{
+    .contents{
+        background-color: white;
+        border: 2px solid black;
+    }
+    .container{
+        .title{
+            text-decoration:  underline black 1px;
+        }
+    }
+    h2{
+        padding-top: 20px;
+
+    }
+     p{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 125%;
+    }
+    .level-item
+    {
+        .subtitle{
+        font-size: 12px;
+    }
+    }
+    .content{
+        padding: 0 5%;
+        h3{
+            text-decoration: underline;
+        }
+    }
+}
+#unlocking{
+    .contents{
+        background-color: white;
+        border: 2px solid black;
+    }
+    .content{
+        padding: 0 5%;
+        h3{
+            text-decoration: underline;
+        }
+        p{
+            padding: 0 2%;
+        }
+    }
+}
+
+#sampling{
+    .contents{
+        background-color: white;
+        border: 2px solid black;
+    }
+}
+
+#cherry, #whereData{
+    .contents{
+        background-color: white;
+        border: 2px solid black;
+    }
+    .container{
+        .title{
+            text-decoration:  underline black 1px;
+        }
+    }
+    h2{
+        padding-top: 20px;
+
+    }
+     p{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 125%;
+    }
+    .level-item
+    {
+        .subtitle{
+        font-size: 12px;
+    }
+    }
+    .content{
+        padding: 0 5%;
+        h3{
+            text-decoration: underline;
+        }
+    }   
+}
+
+#forAndCor{
+    .title{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .is-child{
+        padding: 5% 10%;
+        border: 2px solid black;
+    }
+}
